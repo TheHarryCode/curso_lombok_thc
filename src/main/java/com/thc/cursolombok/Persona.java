@@ -16,9 +16,14 @@ import lombok.ToString;
 public class Persona {
 
 	private String nombre;
-	
 	@Builder.Default
 	private String apellido="Marin";
 	private int edad;
+	
+	@Builder.Default
+	@ToString.Exclude
+	private String direccion="Calle Colombia";
+	
+	
 	
 }
